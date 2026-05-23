@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie 5</title>
+  </head>
+  <body class="p-8">
+    <div id="app">
+      <h1 class="text-2xl font-bold text-primary mb-4">Kalkulator Dat</h1>
+      
+      <div>
+        <input type="date" id="birthDate" class="border p-2 mx-2" />
+        <button id="submitBtn" class="bg-blue-300 p-4">Oblicz</button>
+      </div>
+
+      <dialog id="resultDialog" class="bg-gray-200 text-red-600 p-8 rounded relative shadow-lg mt-4">
+        <button id="closeBtn" class="absolute top-2 right-2 font-bold px-2 border border-red-600">X</button>
+        <p id="dialogContent" class="mt-4"></p>
+      </dialog>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
