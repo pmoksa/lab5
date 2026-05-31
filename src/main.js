@@ -24,9 +24,9 @@ submitBtn.addEventListener('click', () => {
     const isBirthdayToday = today.format('MM-DD') === birthDate.format('MM-DD');
 
     if (isBirthdayToday) {
-        alert('wszystkiego najlepszego!'); // [cite: 42]
-        dialogContent.innerHTML = `Od Twoich narodzin minęło: ${daysLived} dni.`; 
-    } else {
+        dialogContent.innerHTML = `Od Twoich narodzin minęło: ${daysLived} dni.<br><br><span class="font-bold">Wszystkiego najlepszego! 🥳</span>`; 
+    }
+     else {
         const weeksToBirthday = nextBirthday.diff(today, 'weeks'); 
         let additionalInfo = `Do Twoich najbliższych urodzin pozostało ${weeksToBirthday} tygodni.`; // [cite: 51]
         
